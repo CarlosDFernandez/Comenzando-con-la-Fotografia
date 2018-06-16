@@ -1,0 +1,304 @@
+
+body{
+  background: #02010a;
+  font-family: 'Dancing Script', cursive;
+  margin: 0 auto;
+}
+
+/* Efectos del HEADER para el index */
+header{
+  background-color: #5b7989;
+  color: white;
+  text-shadow: 2px #02010a;
+  border-radius: 10px 10px 0px 0px;
+  animation-name: header;
+  animation-duration: 2s;
+}
+
+header nav a{
+  text-decoration: none;
+  margin: 0px 25px;
+  color: white;
+  font-size: 20px;
+}
+
+/** Efecto Slidein **/
+
+@-webkit-keyframes header{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+
+/* Efectos del IMAGEN CENTRAL para el index */
+#img_central figure{
+  margin: 0 auto;
+  padding: 40px;
+}
+
+#img_central{
+  text-align: center;
+  background-color: #82c3a6;
+}
+
+#img_central img{
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px #02010a;
+  -webkit-box-shadow: 2px 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px 2px #02010a;
+}
+
+
+/** PAISAJES.HTML - Efectos de Imagenes **/
+
+#img_central_paisajes{
+  text-align: center;
+  background-color: #82c3a6;
+}
+
+#img_central_paisajes div figure{
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#img_central_paisajes div figure img{
+  margin: 0 auto;
+}
+
+/** PAISAJES.HTML - Efectos de Imagenes **/
+.img1{
+  filter: blur(10px);
+}
+
+.img2, .img4, .img6{
+  filter: grayscale(100%);
+}
+
+.img3{
+  filter: sepia(90%);
+}
+
+
+
+/* INDEX.HTML - Efectos de la IMAGENES SECUNDARIAS */
+#secundaria .img_paisaje img{
+  width: 100%;
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+#secundaria .img_paisaje img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px;
+  transition: 2s;
+}
+
+#secundaria .img_retrato img{
+  width: 100%;
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+#secundaria .img_retrato img:hover{
+  transform: translate(20px, -5px);
+  transition: 2s;
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px;
+}
+
+#secundaria div figure figcaption{
+  font-size: 20px;
+}
+
+/* Efectos del FOOTER para el index */
+footer{
+  border-radius: 0px 0px 10px 10px;
+  background-color: #C6d5c5;
+}
+
+.datos_footer{
+  text-align: left;
+}
+
+.datos_footer p img{
+  width: 15px;
+}
+
+/* Efectos definidos para el DESKTOP */
+@media (min-width:900px) {
+
+/** Efectos para imagenes **/
+  #contenido{
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  header{
+    height: 60px;
+  }
+
+  header h1{
+    float: left;
+    margin: 10px;
+  }
+
+  header nav{
+    float: right;
+    margin: 15px;
+  }
+
+  #secundaria {
+    display: flex;
+    flex-direction: row;
+    background: #d5c75f;
+    border: 1px;
+  }
+
+  #secundaria .img_paisaje{
+    order: 1;
+    width: 50%;
+    padding: 20px;
+  }
+
+  #secundaria .img_retrato{
+    order: 2;
+    width: 50%;
+    padding: 20px;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .datos_footer{
+    padding: 30px;
+    width: 25%;
+  }
+
+
+  /** PAISAJES.HTML - Efectos para imagenes **/
+  #img_central_paisajes{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #img_central_paisajes .img1{
+    order: 1;
+    padding: 10px;
+    width: 33%;
+  }
+
+  #img_central_paisajes .img2{
+    order: 2;
+    padding: 10px;
+    width: 33%;
+  }
+
+  #img_central_paisajes .img3{
+    order: 3;
+    padding: 10px;
+    width: 33%;
+  }
+
+  #img_central_paisajes .img4{
+    order: 4;
+    padding: 10px;
+    width: 33%;
+  }
+
+  #img_central_paisajes .img5{
+    order: 5;
+    padding: 10px;
+    width: 33%;
+  }
+
+  #img_central_paisajes .img6{
+    order: 6;
+    padding: 10px;
+    width: 33%;
+  }
+}
+
+/* Efectos definidos a el MOVIL */
+@media (max-width: 899px){
+
+  #contenido{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  header{
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  header h1{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  header nav{
+    text-align: center;
+    padding-top: 10px
+  }
+
+  #img_central{
+    width: 100%;
+  }
+
+  #secundaria {
+    display: flex;
+    flex-direction: column;
+    background: #d5c75f;
+    border: 1px;
+  }
+  #secundaria .img_paisaje{
+    order: 1;
+    width: 100%;
+  }
+
+  #secundaria .img_retrato{
+    order: 2;
+    width: 100%;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .datos_footer{
+    padding-left: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  footer div p{
+    margin: 0 auto;
+  }
+
+  /** PAISAJES.HTML - Efectos para imagenes **/
+  #img_central_paisajes{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #img_central_paisajes .img1,
+  #img_central_paisajes .img2,
+  #img_central_paisajes .img3,
+  #img_central_paisajes .img4,
+  #img_central_paisajes .img5,
+  #img_central_paisajes .img6{
+    padding: 5px;
+  }
+
+}
